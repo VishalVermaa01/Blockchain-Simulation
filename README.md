@@ -1,6 +1,6 @@
 # Blockchain Simulation Project
 
-This project is a basic simulation of a blockchain, designed to demonstrate the core concepts of blockchain technology, such as blocks, hashing, proof-of-work, and chain validation. It is built using [Python] and serves as an educational tool to help users understand how blockchains work under the hood.
+This project is a basic simulation of a blockchain, designed to demonstrate the core concepts of blockchain technology, such as blocks, hashing, proof-of-work, and chain validation. It is built using Python and serves as an educational tool to understand how blockchains work under the hood.
 
 ## Features
 ### Block Creation: Simulates the creation of blocks with attributes like index, timestamp, data, previous_hash, and hash.
@@ -10,6 +10,11 @@ This project is a basic simulation of a blockchain, designed to demonstrate the 
 ### Chain Validation: Validates the integrity of the blockchain by checking the hashes of all blocks.
 
 ### Modular Design: Easy to extend and integrate with other systems.
+
+### Hashing with SHA-256:
+The SHA-256 algorithm is used to generate a unique hash for each block. The hash is computed by combining the block's index, timestamp, data, and previous_hash into a single string and passing it through the SHA-256 hashing function. This ensures the integrity and immutability of the blockchain.
+
+
 
 
 ## Setup
