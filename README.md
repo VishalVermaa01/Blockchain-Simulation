@@ -26,6 +26,7 @@ pip (Python package manager)
 
 Clone the repository:
 git clone https://github.com/your-username/blockchain-simulation.git 
+
 cd blockchain-simulation
 
 Install the required dependencies:
