@@ -1,4 +1,5 @@
-**Blockchain Simulation Project**
+#Blockchain Simulation Project
+
 This project is a basic simulation of a blockchain, designed to demonstrate the core concepts of blockchain technology, such as blocks, hashing, proof-of-work, and chain validation. It is built using [Python] and serves as an educational tool to help users understand how blockchains work under the hood.
 
 Features
