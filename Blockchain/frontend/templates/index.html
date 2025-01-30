@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Frontend</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Blockchain Frontend</h1>
+    {% if block %}
+        <div class="block">
+            <h2>Block Details</h2>
+            <p><strong>Height:</strong> {{ block.Height }}</p>
+            <p><strong>Block Size:</strong> {{ block.Blocksize }}</p>
+            <p><strong>Transaction Count:</strong> {{ block.Txcount }}</p>
+            <p><strong>Transactions:</strong> {{ block.Txs }}</p>
+            <p><strong>Block Header:</strong></p>
+            <ul>
+                <li><strong>Version:</strong> {{ block.BlockHeader.version }}</li>
+                <li><strong>Previous Block Hash:</strong> {{ block.BlockHeader.prevBlockHash }}</li>
+                <li><strong>Merkle Root:</strong> {{ block.BlockHeader.merkleRoot }}</li>
+                <li><strong>Timestamp:</strong> {{ block.BlockHeader.timestamp }}</li>
+                <li><strong>Bits:</strong> {{ block.BlockHeader.bits }}</li>
+                <li><strong>Nonce:</strong> {{ block.BlockHeader.nonce }}</li>
+                <li><strong>Block Hash:</strong> {{ block.BlockHeader.blockHash }}</li>
+            </ul>
+        </div>
+    {% else %}
+        <p>No blocks found in the blockchain.</p>
+    {% endif %}
+</body>
+</html>
